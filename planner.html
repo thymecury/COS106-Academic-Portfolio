@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | Abdulraheem Warith Lekan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">SecPortfolio</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html" class="active">Academic Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="planner-section">
+            <h2>Interactive Academic Planner</h2>
+            <p>Add, check off, and manage your daily learning tasks and coursework schedules.</p>
+
+            <div class="planner-widget">
+                <form id="todo-form">
+                    <input type="text" id="task-input" placeholder="Type an academic task (e.g., Set up Snort lab)..." required>
+                    <button type="submit" class="btn">Add Task</button>
+                </form>
+
+                <ul id="task-list">
+                    <!-- Dynamic planner tasks will be injected here by Javascript -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Abdulraheem Warith Lekan. All Rights Reserved | MIVA Open University</p>
+    </footer>
+
+    <script src="js/planner.js"></script>
+</body>
+</html>
